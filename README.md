@@ -29,14 +29,11 @@ class Solution {
                 else break;
             }
         }
-        while(!s.isEmpty()) {
-            if(s.peek() == op[j]) {
-                s.pop();
-                j++;
-            }
-            else
-                return 0;
+       if(s.size()==0)
+       {
+                return 1;
         }
-        return 1;
+        return 0;
     }
 }
+ 
